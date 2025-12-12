@@ -5,10 +5,9 @@ const navItems = [
   { name: 'Home', href: '#' },
   { name: 'About the project', href: '#' },
   { name: 'Collaborators', href: '#' },
-  { name: 'ASTRA Dashboard', href: 'https://asthicare.lovable.app/' },
-  { name: 'ASTHI CARE', href: '#' },
-  { name: 'ASTRA AI', href: 'https://astralatest.lovable.app/' },
-  { name: 'Educational portal', href: '#' },
+  { name: 'Dashboard', href: 'https://asthicare.lovable.app/' },
+  { name: 'AI Predictor tool', href: 'https://astralatest.lovable.app/' },
+  { name: 'ASTHI Care App', href: 'https://smart-edu-finder.preview.emergentagent.com/' },
   { name: 'App downloads', href: '#' },
   { name: 'Contact us', href: '#' },
 ];
