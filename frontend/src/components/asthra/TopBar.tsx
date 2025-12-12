@@ -6,7 +6,7 @@ export const TopBar = () => {
         <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-foreground uppercase tracking-wider font-display">
-              ASTHRA
+              ASTRA
             </h1>
           </div>
         </div>
