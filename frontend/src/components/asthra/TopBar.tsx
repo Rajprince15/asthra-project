@@ -8,6 +8,9 @@ export const TopBar = () => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-foreground uppercase tracking-wider font-display">
               ASTRA
             </h1>
+            <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-foreground uppercase tracking-wider font-display">
+              Asthi Risk Assessment: India’s indigenous AI system for early hip fragility fracture risk prediction and national mission for bone health protection
+            </h3>
           </div>
         </div>
       </div>
