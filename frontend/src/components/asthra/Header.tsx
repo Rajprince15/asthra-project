@@ -16,7 +16,7 @@ export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-black/30 backdrop-blur-sm text-white sticky top-0 z-50 shadow-lg border-b border-white/10">
+    <nav className="bg-black/90 backdrop-blur-sm text-white sticky top-0 z-50 shadow-lg border-b border-white/10">
       <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
         <div className="flex justify-center items-center min-h-[56px] sm:min-h-[64px] py-2">
           
