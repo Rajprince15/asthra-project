@@ -2,15 +2,15 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
-  'Home',
-  'About the project',
-  'Collaborators',
-  'Dashboard',
-  'ASTHI CARE',
-  'ASTRA',
-  'Educational portal',
-  'App downloads',
-  'Contact us',
+  { name: 'Home', href: '#' },
+  { name: 'About the project', href: '#' },
+  { name: 'Collaborators', href: '#' },
+  { name: 'ASTRA Dashboard', href: 'https://asthicare.lovable.app/' },
+  { name: 'ASTHI CARE', href: '#' },
+  { name: 'ASTRA AI', href: 'https://astralatest.lovable.app/' },
+  { name: 'Educational portal', href: '#' },
+  { name: 'App downloads', href: '#' },
+  { name: 'Contact us', href: '#' },
 ];
 
 export const Header = () => {
@@ -25,11 +25,14 @@ export const Header = () => {
           <div className="hidden lg:flex w-full justify-center items-center gap-4 xl:gap-6 2xl:gap-8 flex-wrap">
             {navItems.map((item) => (
               <a
-                key={item}
-                href="#"
+                key={item.name}
+                href={item.href}
+                // Optional: Add target="_blank" if you want external links to open in a new tab
+                target={item.href.startsWith('http') ? "_blank" : "_self"} 
+                rel={item.href.startsWith('http') ? "noopener noreferrer" : ""}
                 className="hover:text-secondary uppercase whitespace-nowrap py-2 px-1 transition-colors duration-300 relative group font-medium tracking-wide text-xs xl:text-sm 2xl:text-base"
               >
-                {item}
+                {item.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
@@ -59,13 +62,16 @@ export const Header = () => {
           <div className="flex flex-col py-4 space-y-3">
             {navItems.map((item, index) => (
               <a
-                key={item}
-                href="#"
+                key={item.name}
+                href={item.href}
+                // Optional: Add target="_blank" for mobile links as well
+                target={item.href.startsWith('http') ? "_blank" : "_self"}
+                rel={item.href.startsWith('http') ? "noopener noreferrer" : ""}
                 className="hover:text-secondary uppercase transition-colors text-sm sm:text-base font-medium tracking-wide text-left py-2 border-b border-white/10 last:border-0"
                 style={{ animationDelay: `${index * 50}ms` }}
                 onClick={() => setMobileMenuOpen(false)}
               >
-                {item}
+                {item.name}
               </a>
             ))}
           </div>
