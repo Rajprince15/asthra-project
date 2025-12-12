@@ -11,7 +11,7 @@ const Index = () => {
     <>
       <Helmet>
         <title>ASTRA - The Ultimate Tech Showdown | ICMR Funded Project</title>
-        <meta name="description" content="ASTHRA is an ICMR funded tech competition featuring innovative 5G solutions in Healthcare, Smart Agriculture, Animal Husbandry, and IoT. Win prizes up to INR 10,00,000!" />
+        <meta name="description" content="ASTRA is an ICMR funded tech competition featuring innovative 5G solutions in Healthcare, Smart Agriculture, Animal Husbandry, and IoT. Win prizes up to INR 10,00,000!" />
       </Helmet>
       
       <div className="font-sans text-foreground bg-background min-h-screen flex flex-col">
