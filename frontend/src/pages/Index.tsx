@@ -4,7 +4,7 @@ import { Header } from '@/components/asthra/Header';
 import { HeroSection } from '@/components/asthra/HeroSection';
 import { PhotoGallery } from '@/components/asthra/PhotoGallery';
 import { Footer } from '@/components/asthra/Footer';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 const Index = () => {
   return (
