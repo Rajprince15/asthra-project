@@ -4,13 +4,13 @@ import { Header } from '@/components/asthra/Header';
 import { HeroSection } from '@/components/asthra/HeroSection';
 import { PhotoGallery } from '@/components/asthra/PhotoGallery';
 import { Footer } from '@/components/asthra/Footer';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Index = () => {
   return (
     <>
       <Helmet>
-        <title>ASTRA - The Ultimate Tech Showdown | ICMR Funded Project</title>
+        <title>NHFF-Net - The Ultimate Tech Showdown | ICMR Funded Project</title>
         <meta name="description" content="ASTRA is an ICMR funded tech competition featuring innovative 5G solutions in Healthcare, Smart Agriculture, Animal Husbandry, and IoT. Win prizes up to INR 10,00,000!" />
       </Helmet>
       

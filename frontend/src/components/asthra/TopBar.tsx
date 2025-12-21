@@ -7,15 +7,13 @@ export const TopBar = () => {
           <div className="text-center">
             {/* Main Title - Kept Large */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-foreground uppercase tracking-wider font-display mb-4">
-              ASTRA (अस्त्र)
+              NHFF-Net
             </h1>
 
             {/* Subtitle - Reduced Size for readability */}
             {/* Changed from text-7xl range to text-lg/xl range */}
             <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-muted-foreground uppercase tracking-wide font-display max-w-4xl mx-auto">
-              Asthi Risk Assessment: India’s indigenous AI system for early hip
-              fragility fracture risk prediction and national mission for bone
-              health protection
+              Developing a multi-centric national hip fragility fracture network with an integrated biobank facility for risk prediction, management, validation and improved outcome
             </h3>
           </div>
         </div>
