@@ -1,10 +1,13 @@
 import { Camera, Users, Building } from 'lucide-react';
 import { useIntersectionObserver } from '@/hooks/useParallax';
+import HumanAndAnimalDEXA from '@/assets/gallery/HumanAndAnimalDEXA.jpeg';
+import ABI3500DXSequencer from '@/assets/gallery/ABI3500DX,Sequencer.jpeg';
+import FlowCytometer from '@/assets/gallery/FlowCytometer.jpeg';
 
 const galleryItems = [
-  { icon: Camera, label: 'Kiosk Inauguration', title: 'Inaugural Pictures' },
-  { icon: Users, label: 'User Testing', title: '5G News' },
-  { icon: Building, label: 'Conference Room', title: '5G Training Lab' },
+  { icon: Camera, label: '', title: 'HumanAndAnimalDEXA.jpeg', image: HumanAndAnimalDEXA },
+  { icon: Users, label: '', title: 'ABI3500DX,Sequencer.jpeg', image: ABI3500DXSequencer },
+  { icon: Building, label: '', title: 'FlowCytometer.jpeg', image: FlowCytometer },
 ];
 
 export const PhotoGallery = () => {
@@ -30,17 +33,12 @@ export const PhotoGallery = () => {
                 }`}
                 style={{ transitionDelay: `${index * 150}ms` }}
               >
-                <div className="aspect-[4/3] sm:aspect-[3/4] overflow-hidden rounded-lg shadow-lg bg-muted relative group-hover:shadow-2xl transition-all duration-300">
-                  <div className="absolute inset-0 bg-gradient-to-b from-muted to-muted/80 flex items-center justify-center text-muted-foreground">
-                    <div className="text-center transform group-hover:scale-110 transition-transform duration-300">
-                      <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 mx-auto mb-2 sm:mb-3 border-2 border-muted-foreground/40 rounded-full flex items-center justify-center group-hover:border-primary group-hover:text-primary transition-colors duration-300">
-                        <Icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
-                      </div>
-                      <span className="text-xs sm:text-sm font-medium">{item.label}</span>
-                    </div>
-                  </div>
+                <div className="aspect-[3/2] sm:aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-lg relative group-hover:shadow-2xl transition-all duration-300">
+                  <img src={item.image} alt={item.title} className="w-full h-full object-contain" />
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300" />
+                  <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-end justify-start p-4">
+                    <span className="text-white text-xs sm:text-sm font-medium bg-black/50 px-2 py-1 rounded">{item.label}</span>
+                  </div>
                 </div>
               </div>
             );
