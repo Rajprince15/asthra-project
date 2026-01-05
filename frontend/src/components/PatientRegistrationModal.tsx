@@ -350,7 +350,7 @@ export const PatientRegistrationModal: React.FC<PatientRegistrationModalProps> =
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Centre ID <span className="text-red-500">*</span>
+                  Centre ID <span className="text-red-500"></span>
                 </label>
                 <input
                   type="text"
